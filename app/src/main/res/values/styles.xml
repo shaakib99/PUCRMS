@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="firstpagetheme" parent="Theme.AppCompat.Light.NoActionBar" >
+
+        <item name="colorPrimaryDark">@color/cardview_dark_background</item>
+    </style>
+    <style name="firstspinnerdesign" >
+
+        <item name="android:background">@drawable/firstspinner</item>
+
+    </style>
+    <style name="slidedown">
+        <item name="android:windowEnterAnimation">@anim/animduration</item>
+        <item name="android:windowExitAnimation">@anim/topcloseanim</item>
+    </style>
+
+</resources>

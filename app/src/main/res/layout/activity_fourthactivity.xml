@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fourthactivity"
+    android:background="@drawable/fourthactivityback">
+    <RelativeLayout
+        android:id="@+id/RtoolBox"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#757575">
+        <ImageView
+            android:id="@+id/back2"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back60"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginStart="4dp"
+            android:background="@drawable/backripple"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Overlap Information"
+            android:layout_toEndOf="@id/back2"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="21sp"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/topcenter"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/RtoolBox"
+        android:layout_marginTop="10dp"
+        android:layout_alignBottom="@id/information_ur_class"
+        android:background="#757575"
+        android:layout_alignTop="@id/information_ur_class"/>
+    <RelativeLayout
+        android:id="@+id/information_ur_class"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_toStartOf="@id/topcenter"
+        android:layout_below="@id/RtoolBox"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp">
+        <ImageView
+            android:id="@+id/iconme"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:src="@drawable/myclass60"
+            android:layout_marginTop="10dp"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/mysection"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/iconme"
+            android:text="C5B"
+            android:gravity="center|left"
+            android:layout_marginStart="4dp"
+            android:textSize="16dp"
+           />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/information_other_class"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_toEndOf="@id/topcenter"
+        android:layout_below="@id/RtoolBox"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="25dp"
+        >
+        <ImageView
+            android:id="@+id/iconother"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:src="@drawable/secondclass60"
+            android:layout_marginTop="10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="30dp"/>
+        <TextView
+            android:id="@+id/othersection"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/iconother"
+            android:text="C7B"
+            android:gravity="center|left"
+            android:layout_marginStart="4dp"
+            android:textSize="15dp"/>
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            />
+
+    </RelativeLayout>
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recylerview2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/information_ur_class"
+        android:layout_marginTop="10dp">
+    </android.support.v7.widget.RecyclerView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/recylerview2"
+        android:layout_marginTop="7dp"
+        android:id="@+id/teacher_id"
+        android:gravity="center"
+
+        android:fontFamily="sans-serif-condensed"/>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="@drawable/okpopop">
+    <RelativeLayout
+        android:id="@+id/okikon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/ok256"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/mesg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/okikon"
+        android:text="No Overlapped Subject Found!!"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="15dp"/>
+    <Button
+        android:id="@+id/okbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mesg"
+        android:background="@drawable/okripple"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:text="OK"
+        android:textColor="#069704"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+</RelativeLayout>

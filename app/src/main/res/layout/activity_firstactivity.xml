@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".firstactivity"
+    android:background="@drawable/firstactivitydesign">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00757575">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Welcome"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:includeFontPadding="true"
+                android:fontFamily="serif"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:id="@+id/logo_puc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_alignBottom="@id/sectionSelection"
+        android:layout_marginBottom="50dp">
+        <ImageView
+            android:id="@+id/puc"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/puc"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="4dp"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/varsity_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/puc"
+            android:text="PREMIER UNIVERSITY \nROUTINE OF DEPARTMENT OF CSE"
+            android:gravity="center|top"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:fontFamily="serif"
+            />
+        <TextView
+            android:id="@+id/cntrfirst"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/cntrfirst"
+            android:layout_marginTop="40dp"
+            android:text="Select Section"
+            android:gravity="center|bottom"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:textSize="15dp"
+
+            />
+    </RelativeLayout>
+
+    <Spinner
+        android:id="@+id/sectionSelection"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        style="@style/firstspinnerdesign"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"/>
+    <Button
+        android:id="@+id/firstsectionbutton"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/sectionSelection"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="GO"
+        android:background="@drawable/firstgobutton"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"/>
+
+
+
+</RelativeLayout>

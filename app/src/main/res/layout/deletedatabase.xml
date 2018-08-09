@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="#fff">
+    <TextView
+        android:id="@+id/cntrL"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerVertical="true"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@id/cntrL"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp">
+        <ImageView
+            android:id="@+id/removeic"
+            android:layout_width="30dp"
+            android:layout_height="32dp"
+            android:src="@drawable/deletefile60"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Do you want to clear presaved database?"
+            android:gravity="center"
+            android:textSize="17dp"
+            android:layout_toEndOf="@id/removeic"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginStart="3dp"
+            android:background="@drawable/databaseclear"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cntrL"
+        android:layout_marginTop="3dp">
+        <Button
+            android:id="@+id/no"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:text="No"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#00a957"
+            android:gravity="center"
+            android:background="@color/transparent"
+            android:layout_marginStart="30dp"
+            android:layout_toStartOf="@id/yes"
+            android:layout_marginEnd="4dp"/>
+        <Button
+            android:id="@+id/yes"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:text="Yes"
+            android:textColor="#00a957"
+            android:gravity="center"
+            android:background="@color/transparent"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
